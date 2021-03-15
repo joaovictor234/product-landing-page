@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#header{
+    width: auto;
+    height: 100px;
+}
+#title{
+    font-size: 15px;
+    float: left;
+}
+#nav-bar{
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+}
+a{
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+a:hover{
+    background: rgb(58, 58, 58);
+}
+#form{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fieldset-form{
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+#email{
+    width: 450px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#submit{
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(70, 62, 62);
+    color: #fff;
+    border-radius: 10px;
+}
+#information{
+    height: auto;
+    width: 700px;
+    margin: 50px auto 50px auto;
+}
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#products{
+    display: flex;
+
+}
+.product{
+    background: #000;
+    color: #fff;
+    height: auto;
+    width: 275px;
+    padding: 20px 30px 10px 30px;
+    margin: 30px 0px 30px 0px;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+.price{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+.select{
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width: 800px){
+    #products{
+        display: block;
+    }
+    #video{
+        
+    }
+}

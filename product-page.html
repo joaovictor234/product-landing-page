@@ -4,39 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product-style.css">
     <title>Product Landing Page</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="#" alt="#">
-            <a href="#">Features</a>
-            <a href="#">How it Works</a>
-            <a href="#">Pricing</a>
+    <header id="header">
+        <div id="title">
+            <h1><img height="50px" width="50px" src="https://cdn.iconscout.com/icon/free/png-512/nike-13-722724.png" alt="nike logo" id="header-img">Nike Shoes</h1>
+        </div>
+        <nav id="nav-bar">
+            <a href="#information" class="nav-link">Features</a>
+            <a href="#video" class="nav-link">How it Works</a>
+            <a href="#products" class="nav-link">Pricing</a>
         </nav>
     </header>
-    <form>
-        <h1>Do you want to receive more information about new products?</h1>
-        <input type="email" name="" id="">
-        <input type="submit" value="GET STARTED">
+
+    <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        <fieldset id="fieldset-form">
+        <h2>Do you want to receive more information about new products?</h2>
+        <input type="email" name="email" id="email" placeholder="E-mail">
+        <input type="submit" value="GET STARTED" id="submit">
+    </fieldset>
     </form>
-    <div>
+    <section id="information">
         <h2>Good for your workouts</h2>
         <p>Its upper features breathable mesh construction and synthetic applications for better footwear structure and durability. Its midsole has foam construction with excellent response, impact absorption and stability. .</p>
         <h2>Comfort for your feet</h2>
         <p>In addition to being good for walking and casual use, it is also a good shoe for light and short runs. And not only that, if he trains weight training or dancing in the gym, he will accept these challenges with mastery.</p>
         <h2>Walk in style</h2>
         <p>With vibrant and flashy colors, it is certainly an addition to your garments</p>
-    </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/yshNZlWezDk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>´
-    <article>
-        <div>
+    </section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yshNZlWezDk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+    <section id="products">
+        <div class="product">
             <h3>Nike Air Vapor Max Evo Men's Shoes</h3>
-            <p></p>
+            <p class="price">R$ 599,99</p>
+            <p>The shine lasts in the Nike Air Force 1 '07 LX, the basketball icon that gives a renewed touch to what you know well: stitched overlays, bold colors and perfect shine to make you stand out.</p>
+            <input type="button" value="SELECT" class="select">
         </div>
-        <div>
-            
+        <div class="product">
+            <h3>Janoski Canvas RM Premium Unisex</h3>
+            <p class="price">R$ 409,99</p>
+            <p>The Nike SB Zoom Stefan Janoski Canvas RM Premium combines a minimalist look with a modern fit. It has been updated with a soft insole and a flexible sole for better contact with the shape right off the bat.</p>
+            <input type="button" value="SELECT" class="select">
         </div>
-    </article>
+        <div class="product">
+            <h3>Nike Air Max 270 React (Hip Hop) sneakers for men</h3>
+            <p class="price">R$ 459,99</p>
+            <p>Inspired by the colors and textures of the artistic movements of the last century, the Nike Air Max 270 React uses lightweight layered materials to create a modern design that looks as good as touch.</p>
+            <input type="button" value="SELECT" class="select">
+        </div>
+    </section>
 </body>
 </html>
